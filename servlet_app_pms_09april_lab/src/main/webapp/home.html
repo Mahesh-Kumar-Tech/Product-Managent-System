@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+        }
+
+        .home-main {
+            width: 400px;
+            padding: 20px;
+            height: 200px;
+            background-color: #f0f0f0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .home-main h1 {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px 0; /* Adjusted margin to avoid overlap */
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background-color: #3399ff; /* Slightly lighter blue */
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%; /* Set width to 100% to fill the container's width */
+            box-sizing: border-box; /* Ensures padding and border are included in width */
+        }
+
+        .btn:hover {
+            background-color: #287dc4; /* Slightly darker hover color */
+        }
+    </style>
+</head>
+<body>
+    <div class="home-main">
+        <h1>Welcome to Our Website</h1>
+        <a href="login.html" class="btn">Admin Login</a><br>
+        <a href="Customer.html" class="btn">Customer Login</a>
+    </div>
+</body>
+</html>

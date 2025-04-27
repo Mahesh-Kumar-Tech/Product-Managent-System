@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Registration</title>
+        <style>
+        @charset "UTF-8";
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-form {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        .register-form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        .register-form input[type="text"],
+        .register-form input[type="email"],
+        .register-form input[type="number"],
+        .register-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .register-form input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745; /* green */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .register-form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form action="aregister" method="post" class="register-form">
+        <label>Full Name:</label> 
+        <input type="text" name="aname" placeholder="Enter your Full Name">
+
+        <label>Email Address:</label> 
+        <input type="email" name="amid" placeholder="Enter your email address">
+
+        <label>Phone Number:</label> 
+        <input type="number" name="aphno" placeholder="Enter your phone number">
+
+        <label>Password:</label> 
+        <input type="password" name="apas" placeholder="Enter your password">
+
+        <label>Confirm Password:</label> 
+        <input type="password" name="acpas" placeholder="Confirm your password">
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

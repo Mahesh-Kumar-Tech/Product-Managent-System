@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+    <style>
+        /* Reset and layout */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form styling */
+        .login-form {
+            background-color: #ffffff; /* Keep original form background color */
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            width: 350px; /* Reduced form width */
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc; /* Light grey border */
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: green; /* Button color set to green */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: darkgreen; /* Darker green on hover */
+        }
+
+        .login-form h4 {
+            margin-top: 20px;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        .login-form a {
+            display: block;
+            text-align: center;
+            margin-top: 8px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-form a:hover {
+            text-decoration: underline;
+        }
+
+        /* Change color of Admin Login label */
+        .login-form .admin-label {
+            font-size: 22px;
+            color: #ff5722; /* Admin login color set to orange */
+            font-weight: bold;
+            text-align: center; /* Center only the Admin Login label */
+            margin-bottom: 20px; /* Add some space below Admin Login */
+        }
+    </style>
+</head>
+<body>
+    <form action="alogin" method="post" class="login-form">
+        <label class="admin-label">Admin Login</label>
+        <label>Admin Name:</label> 
+        <input type="text" name="aname" placeholder="Enter Your Name" required>
+
+        <label>Password:</label> 
+        <input type="password" name="apas" placeholder="Enter Your Password" required>
+
+        <input type="submit" value="Login">
+
+        <h4>Don't have an account?</h4>
+        <a href="register.html">Register here</a>
+    </form>
+</body>
+</html>

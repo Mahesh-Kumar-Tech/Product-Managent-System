@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Customer Registration</title>
+<style>
+    body {
+        font-family: sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 30px 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 500px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        width: 140px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .form-group input {
+        flex: 1;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .form-group input:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+        form {
+            width: 90%;
+        }
+
+        .form-group {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .form-group label {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <form action="cregister" method="post">
+        <h2>Register</h2>
+        <div class="form-group">
+            <label>Username:</label> 
+            <input type="text" name="cuname" placeholder="Enter Username" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password:</label> 
+            <input type="password" name="cpass" placeholder="Enter Password" required>
+        </div>
+
+        <div class="form-group">
+            <label>First Name:</label> 
+            <input type="text" name="cfname" placeholder="Enter first name">
+        </div>
+
+        <div class="form-group">
+            <label>Last Name:</label> 
+            <input type="text" name="clname" placeholder="Enter last name">
+        </div>
+
+        <div class="form-group">
+            <label>Mail Id:</label> 
+            <input type="email" name="cmid" placeholder="Enter mail">
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number:</label> 
+            <input type="number" name="cphno" placeholder="Enter mobile no">
+        </div>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

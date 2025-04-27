@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background-color: #f2f6fc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        background-color: #ffffff;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        width: 350px; /* Adjusted width of the form */
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: red; /* Button color set to red */
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: darkred;
+    }
+
+    tr:first-child td {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: #ff6666; /* Light red color */
+        width: 100%; /* Ensure header takes full width */
+    }
+</style>
+</head>
+<body>
+    <form action="add" method="post">
+        <table>
+            <tr>
+                <td colspan="2" class="title">Product Details</td>
+            </tr>
+            <tr>
+                <td>Product Code</td>
+                <td><input type="text" name="pcode" placeholder="Enter Product code"></td>
+            </tr>
+            <tr>
+                <td>Product Name</td>
+                <td><input type="text" name="pname" placeholder="Enter Product name"></td>
+            </tr>
+            <tr>
+                <td>Product Price</td>
+                <td><input type="text" name="pprice" placeholder="Enter Product price"></td>
+            </tr>
+            <tr>
+                <td>Product Stock</td>
+                <td><input type="text" name="pstock" placeholder="Enter Product stock"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Add Product"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
